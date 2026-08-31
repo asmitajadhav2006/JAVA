@@ -1,4 +1,4 @@
-public class hollowtriangle {
+public class hollowtgriangle {
 
     public static void main(String[] args) {
 
