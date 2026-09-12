@@ -1,5 +1,13 @@
 public class practice {
-    static int getvowelscount(String str){
+    public static void reverseprint(String []str) {
+        String s=str[0];
+        String rev="";
+        for(int i=s.length()-1;i>=0;i--){
+            rev=rev+s.charAt(i);
+        }
+        System.out.println("Reversed string: " + rev);
+    }}
+    /*static int getvowelscount(String str){
         int count=0;
         for(int i=0;i<str.length();i++){
             char ch=str.charAt(i);
@@ -14,7 +22,7 @@ public class practice {
         System.out.println(getvowelscount(str));
 
     }
-}
+}*/
     /*static void printlength(String str) {
         int count=0;
         for(char ch:str){
