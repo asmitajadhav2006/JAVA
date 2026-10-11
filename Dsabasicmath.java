@@ -1,5 +1,6 @@
 public class Dsabasicmath {
     public static void main(String[] args) {
+        /* 
         int a = 10;
         int b = 5;
 
@@ -25,7 +26,15 @@ public class Dsabasicmath {
 
         // Modulus
         int remainder = a % b;
-        System.out.println("Remainder: " + remainder);
+        System.out.println("Remainder: " + remainder);*/
+        int n = 12345;
+        int count = 0;
+
+        while (n > 0) {
+            count++;
+            n = n / 10;
+        }
+
+        System.out.println("Number of digits = " + count);
     }
-    
 }
