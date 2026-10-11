@@ -144,7 +144,7 @@ public class Dsabasicmath {
 }*/
 //Problem 8: LCM
 
-        int a = 12;
+      /*  int a = 12;
         int b = 18;
 
         int x = a;
@@ -160,5 +160,24 @@ public class Dsabasicmath {
         int lcm = (a * b) / gcd;
 
         System.out.println("LCM = " + lcm);
+    }
+}
+*/
+//Problem 9: Armstrong Number
+        int n = 153;
+        int original = n;
+        int sum = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            sum = sum + (digit * digit * digit);
+            n = n / 10;
+        }
+
+        if (sum == original) {
+            System.out.println("Armstrong Number");
+        } else {
+            System.out.println("Not Armstrong Number");
+        }
     }
 }
