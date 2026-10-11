@@ -1,6 +1,7 @@
+import java.util.Scanner;
 public class Dsabasicmath {
     public static void main(String[] args) {
-        /* 
+        /* ARITHMATIC PROBLEM
         int a = 10;
         int b = 5;
 
@@ -26,8 +27,11 @@ public class Dsabasicmath {
 
         // Modulus
         int remainder = a % b;
-        System.out.println("Remainder: " + remainder);*/
-        int n = 12345;
+        System.out.println("Remainder: " + remainder);
+        */
+      // Problem 1: Count Digits in a Number
+
+      /*   int n = 12345;
         int count = 0;
 
         while (n > 0) {
@@ -35,6 +39,61 @@ public class Dsabasicmath {
             n = n / 10;
         }
 
-        System.out.println("Number of digits = " + count);
+        System.out.println("Number of digits = " + count);*/
+        //3. Digits of a Number
+
+        /*int n = 1234;
+        int sum = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            sum = sum + digit;
+            n = n / 10;
+        }
+
+        System.out.println("Sum of digits = " + sum);*/
+        //Problem 3: Reverse a Number
+        /*int n = 1234;
+        int rev = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+
+        System.out.println("Reversed number = " + rev);*/
+       // 4. Even and Odd Number
+        /*int n = 7;
+
+        if (n % 2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
+    }
+}*/
+//Problem 4: Palindrome Number
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+
+        int original = n;
+        int rev = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+
+        if (original == rev) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+
+        sc.close();
     }
 }
