@@ -74,7 +74,7 @@ public class Dsabasicmath {
     }
 }*/
 //Problem 4: Palindrome Number
-        Scanner sc = new Scanner(System.in);
+    /*   Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
@@ -94,6 +94,50 @@ public class Dsabasicmath {
             System.out.println("Not Palindrome");
         }
 
-        sc.close();
+        sc.close();*/
+      //  Problem 5: Prime Number
+       /* int n = 7;
+        boolean isPrime = true;
+
+        if (n <= 1) {
+            isPrime = false;
+        } else {
+            for (int i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        if (isPrime) {
+            System.out.println("Prime");
+        } else {
+            System.out.println("Not Prime");
+        }
+    }
+}*/
+//Problem 6: Factorial
+        /*int n = 5;
+        int fact = 1;
+
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+
+        System.out.println("Factorial = " + fact);
+    }
+}
+*/
+        int a = 12;
+        int b = 18;
+
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+
+        System.out.println("GCD = " + a);
     }
 }
