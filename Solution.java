@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class problem20 { {
+
+    public static int longestValidParentheses(String s) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(-1);
+
+        int maxLength = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            if (s.charAt(i) == '(') {
+                stack.push(i);
+            } else {
+                stack.pop();
+
+                if (stack.empty()) {
+                    stack.push(i);
+                } else {
+                    int length = i - stack.peek();
+                    maxLength = Math.max(maxLength, length);
+                }
+            }
+        }
+
+        return maxLength;
+    }
+
+    public static void main(String[] args) {
+        String s = ")()())";
+
+        int result = longestValidParentheses(s);
+
+        System.out.println(result);
+    }
+}
