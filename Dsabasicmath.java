@@ -164,7 +164,7 @@ public class Dsabasicmath {
 }
 */
 //Problem 9: Armstrong Number
-        int n = 153;
+       /*int n = 153;
         int original = n;
         int sum = 0;
 
@@ -179,5 +179,53 @@ public class Dsabasicmath {
         } else {
             System.out.println("Not Armstrong Number");
         }
+    }
+}
+*/
+//Problem 10: Power of a Number
+        /*int a = 2;
+        int b = 5;
+        int ans = 1;
+
+        for (int i = 1; i <= b; i++) {
+            ans = ans * a;
+        }
+
+        System.out.println("Power = " + ans);
+    }
+}
+*/
+//Problem 11: Perfect Number
+     /* int n = 6;
+        int sum = 0;
+
+        for (int i = 1; i < n; i++) {
+            if (n % i == 0) {
+                sum = sum + i;
+            }
+        }
+
+        if (sum == n) {
+            System.out.println("Perfect Number");
+        } else {
+            System.out.println("Not Perfect Number");
+        }
+    }
+}*/
+//Problem 12: Count Number of Even Digits
+        int n = 248531;
+        int count = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+
+            if (digit % 2 == 0) {
+                count++;
+            }
+
+            n = n / 10;
+        }
+
+        System.out.println("Even digits count = " + count);
     }
 }

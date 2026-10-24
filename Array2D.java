@@ -11,7 +11,7 @@ public class Array2D {
 
         // System.out.println(brr[3][1]); // This would give ArrayIndexOutOfBoundsException
 
-        int rowLength = brr.length;
+/*       int rowLength = brr.length;
 
         for (int rowIndex = 0; rowIndex <= rowLength - 1; rowIndex++) {
 
@@ -24,6 +24,27 @@ public class Array2D {
             }
 
             System.out.println();
+        }
+    }
+}
+*/
+//Problem 13: Print All Prime Numbers from 1 to n
+
+        int n = 20;
+
+        for (int num = 2; num <= n; num++) {
+            boolean isPrime = true;
+
+            for (int i = 2; i * i <= num; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                System.out.print(num + " ");
+            }
         }
     }
 }
