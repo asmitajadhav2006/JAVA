@@ -13,6 +13,9 @@ class Circle extends Shape {
     public void draw() {
         System.out.println("Drawing a circle");
     }
+    public void circleSpecificMethod() {
+        System.out.println("This is a method specific to Circle");
+    }
 }
 
 // Child class 2
@@ -36,18 +39,26 @@ public class Demo{
         c.draw();
 
         Rectangle s3 = new Rectangle();
-        s3.draw();*/
-        //Runtime polymorphism
+        s3.draw();
+        //Runtime polymorphism upcasting 
         Circle c=new Circle();
         doSomething(c);
         Rectangle r=new Rectangle();
         doSomething(r);
         Shape s=new Shape();
-        doSomething(s);
+        doSomething(s);*/
+        //Downcasting
+      // Circle c=new Circle();
+        //doSomething(c);
+        Rectangle r=new Rectangle();
+        doSomething(r);
 
     }
     public static void  doSomething(Shape s){
         s.draw();//polymorphic behavior
+        Circle r=(Circle)s;//downcasting
+        r.circleSpecificMethod();//DOWNCASTING
+
         
 
     }
