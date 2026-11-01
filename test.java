@@ -28,7 +28,7 @@ public class test{
         s.eat();
     }
 }*/
-interface Father {
+/*interface Father {
     void skills();
 }
 
@@ -55,5 +55,36 @@ public class test {
         c.skills();
         c.talent();
     }
+}*/
+// Creating an interface
+interface Animal {
+    void sound();
 }
 
+// Implementing interface
+class Dog implements Animal {
+
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+// Another class implementing interface
+class Cat implements Animal {
+
+    public void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+// Main class
+public class test {
+    public static void main(String[] args) {
+
+        Dog d = new Dog();
+        d.sound();
+
+        Cat c = new Cat();
+        c.sound();
+    }
+}
