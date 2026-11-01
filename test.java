@@ -1,7 +1,7 @@
 
 //abstaction :showing essential details and hide implementation 
 //abstract class it cannot be instanciated(object cannot be created) and act as a superclass of subclasses that are sharing the same interfce
-abstract class bird  {
+/*abstract class bird  {
  abstract void fly();
 
  abstract void eat();
@@ -26,6 +26,34 @@ public class test{
         
         s.fly();
         s.eat();
+    }
+}*/
+interface Father {
+    void skills();
+}
+
+interface Mother {
+    void talent();
+}
+
+class Child implements Father, Mother {
+
+    public void skills() {
+        System.out.println("Good at coding");
+    }
+
+    public void talent() {
+        System.out.println("Good at singing");
+    }
+}
+
+public class test {
+    public static void main(String[] args) {
+
+        Child c = new Child();
+
+        c.skills();
+        c.talent();
     }
 }
 
