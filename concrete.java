@@ -2,7 +2,7 @@
     
 //abstaction :showing essential details and hide implementation 
 //abstract class it cannot be instanciated(object cannot be created) and act as a superclass of subclasses that are sharing the same interfce
-abstract class bird  {
+/*abstract class bird  {
  abstract void fly();
 
  abstract void eat();
@@ -31,5 +31,34 @@ public class concrete{
         s.fly();
         s.eat();
         s.sleep();
+    }
+}*/
+// Creating an interface
+interface Printable {
+    void print();
+}
+
+interface Showable {
+    void show();
+}
+
+class J implements Printable, Showable {
+
+    public void print() {
+        System.out.println("Printing document...");
+    }
+
+    public void show() {
+        System.out.println("Showing document...");
+    }
+}
+
+public class concrete {
+    public static void main(String[] args) {
+
+        J obj = new J();
+
+        obj.print();
+        obj.show();
     }
 }
